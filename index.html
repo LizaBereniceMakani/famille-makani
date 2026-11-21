@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>En mémoire de Jean-Gabriel Makani et Brigitte Ngo Mboua</title>
+<meta name="description" content="Célébration commémorative du rappel à Dieu de Jean-Gabriel Makani et Brigitte Ngo Mboua, les 15 et 16 janvier 2027 à Song Ndjiki (par Otélé).">
+<meta property="og:title" content="En mémoire de Jean-Gabriel Makani et Brigitte Ngo Mboua">
+<meta property="og:description" content="La famille Makani vous invite les 15 et 16 janvier 2027 à Song Ndjiki (par Otélé).">
+<meta property="og:image" content="photos/couple-invitation.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f2a22; --soft:#4d5a50; --sage:#56684f; --sage-d:#3b4a36; --cream:#f7f3ea; --paper:#fbf9f4;
+  --gold:#b08d3c; --gold-l:#d9bd7a; --rose:#e9c9c3; --line:rgba(176,141,60,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',system-ui,sans-serif;font-weight:300;color:var(--ink);background:var(--paper);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+.eyebrow{font-size:.74rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500}
+h2{font-size:clamp(2.2rem,6vw,3.2rem);line-height:1.1;margin:.3em 0 .6em}
+.rule{width:64px;height:1px;background:var(--gold);margin:22px auto}
+.center{text-align:center}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(251,249,244,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);transform:translateY(-100%);transition:transform .4s}
+nav.show{transform:none}
+nav ul{display:flex;gap:22px;list-style:none;overflow-x:auto;padding:13px 22px;max-width:960px;margin:0 auto;scrollbar-width:none;white-space:nowrap}
+nav ul::-webkit-scrollbar{display:none}
+nav a{text-decoration:none;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+nav a:hover{color:var(--gold)}
+
+/* hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 22px;background:radial-gradient(ellipse at top,#fff 0%,var(--cream) 60%,#efe8d8 100%);position:relative;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(233,201,195,.55),transparent 70%);filter:blur(10px)}
+.hero::before{top:-140px;left:-160px}
+.hero::after{bottom:-160px;right:-140px;background:radial-gradient(circle,rgba(86,104,79,.22),transparent 70%)}
+.portraits{display:flex;gap:18px;justify-content:center;margin:34px 0 30px;position:relative;z-index:1}
+.portraits figure{width:min(38vw,190px)}
+.portraits img{aspect-ratio:3/4;object-fit:cover;border-radius:999px 999px 14px 14px;border:3px solid #fff;box-shadow:0 0 0 1px var(--gold),0 18px 40px -18px rgba(31,42,34,.45)}
+.hero h1{font-size:clamp(2.1rem,7vw,3.6rem);line-height:1.08;position:relative;z-index:1}
+.hero h1 .amp{display:block;font-style:italic;color:var(--gold);font-size:.7em;margin:.1em 0}
+.years{display:flex;justify-content:center;gap:28px;margin-top:20px;font-size:.92rem;color:var(--soft);position:relative;z-index:1;flex-wrap:wrap}
+.years b{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--sage-d);font-weight:600;display:block;line-height:1}
+.verse{margin-top:30px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.2rem;color:var(--sage-d);max-width:520px;position:relative;z-index:1}
+.verse small{display:block;font-family:'Jost';font-style:normal;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:6px}
+.scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--soft);text-decoration:none;z-index:1}
+.scroll::after{content:"";display:block;width:1px;height:34px;background:var(--gold);margin:10px auto 0;animation:drop 2s infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* invitation */
+.invite{background:var(--sage-d);color:#f3efe4}
+.invite h2{color:#fff}
+.invite .quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.35rem;line-height:1.5;color:var(--gold-l);max-width:640px;margin:0 auto 30px}
+.invite p{max-width:640px;margin:0 auto 18px;color:#e3dfd2}
+.dates{display:flex;justify-content:center;align-items:center;gap:22px;margin:44px 0 30px;flex-wrap:wrap}
+.date{border:1px solid rgba(217,189,122,.55);padding:20px 26px;min-width:150px}
+.date span{display:block;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-l)}
+.date b{display:block;font-family:'Cormorant Garamond',serif;font-size:3.4rem;line-height:1;font-weight:500;color:#fff;margin:6px 0 2px}
+.date em{font-style:normal;font-size:.9rem;letter-spacing:.2em;text-transform:uppercase}
+.dates .amp{font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--gold-l);font-style:italic}
+.place{font-family:'Cormorant Garamond',serif;font-size:1.7rem;color:#fff;margin-bottom:22px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border:1px solid var(--gold-l);color:#fff;text-decoration:none;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;background:transparent;cursor:pointer;font-family:inherit;transition:.25s}
+.btn:hover{background:var(--gold-l);color:var(--sage-d)}
+.btn.solid{background:var(--gold);border-color:var(--gold);color:#fff}
+.btn.solid:hover{background:var(--sage-d);border-color:var(--sage-d)}
+.programme{margin:44px auto 0;max-width:520px;border-top:1px solid rgba(217,189,122,.35);padding-top:28px;font-size:.95rem;color:#cfcabb}
+.programme h3{font-size:1.5rem;color:#fff;margin-bottom:8px}
+
+/* intro */
+.intro p{margin-bottom:16px;text-align:center}
+.intro .couple{max-width:330px;margin:0 auto 38px;padding:10px;background:#fff;box-shadow:0 0 0 1px var(--line),0 24px 50px -24px rgba(0,0,0,.35)}
+blockquote.big{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.45rem;line-height:1.45;text-align:center;color:var(--sage-d);margin:40px auto 0;max-width:600px}
+blockquote.big cite{display:block;font-family:'Jost';font-style:normal;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:12px}
+
+/* bios */
+.bios{background:var(--cream)}
+.bio{display:grid;grid-template-columns:1fr;gap:26px;margin-bottom:64px;align-items:start}
+.bio:last-child{margin-bottom:0}
+.bio img{width:100%;max-width:220px;margin:0 auto;filter:sepia(.15);box-shadow:0 20px 40px -22px rgba(0,0,0,.45)}
+.bio h3{font-size:2.1rem;line-height:1.1}
+.bio .nick{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold);font-size:1.15rem;margin:4px 0 14px}
+.bio p{margin-bottom:14px}
+@media(min-width:760px){.bio{grid-template-columns:260px 1fr;gap:44px}.bio.rev{grid-template-columns:1fr 260px}.bio.rev figure{order:2}}
+
+/* timeline */
+.tl{position:relative;margin-top:40px}
+.tl::before{content:"";position:absolute;left:15px;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--gold),var(--line))}
+.ev{position:relative;padding-left:50px;margin-bottom:32px}
+.ev::before{content:"";position:absolute;left:9px;top:9px;width:13px;height:13px;border-radius:50%;background:var(--paper);border:2px solid var(--gold)}
+.ev.key::before{background:var(--gold)}
+.ev .y{font-family:'Cormorant Garamond',serif;font-size:1.65rem;font-weight:600;color:var(--sage-d);line-height:1}
+.ev .y small{font-family:'Jost';font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-left:8px}
+.ev p{margin-top:4px;color:var(--soft)}
+@media(min-width:760px){
+  .tl::before{left:50%}
+  .ev{width:50%;padding-left:0;padding-right:44px;text-align:right}
+  .ev::before{left:auto;right:-7px}
+  .ev:nth-child(even){margin-left:50%;padding-right:0;padding-left:44px;text-align:left}
+  .ev:nth-child(even)::before{right:auto;left:-6px}
+  .ev .y small{margin-left:8px}
+}
+
+/* story */
+.story p{margin-bottom:16px}
+.story h3{font-size:1.9rem;margin:46px 0 14px}
+.story h3:first-of-type{margin-top:0}
+.photo-wide{margin:34px 0;box-shadow:0 20px 44px -24px rgba(0,0,0,.5)}
+figcaption{font-size:.8rem;color:var(--soft);text-align:center;margin-top:10px;font-style:italic}
+
+/* values */
+.values{background:var(--sage);color:#f3efe4}
+.values h2{color:#fff}
+.vgrid{display:grid;gap:18px;margin-top:30px}
+@media(min-width:700px){.vgrid{grid-template-columns:1fr 1fr}}
+.vcard{background:rgba(255,255,255,.06);border:1px solid rgba(217,189,122,.3);padding:26px}
+.vcard h3{font-size:1.7rem;color:#fff;margin-bottom:4px}
+.vcard .lead{font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--gold-l);margin-bottom:14px}
+.vcard ul{list-style:none}
+.vcard li{padding:10px 0;border-top:1px solid rgba(255,255,255,.1);font-size:.95rem}
+.vcard li b{color:#fff;font-weight:500}
+
+/* anecdotes */
+.anec{display:grid;gap:22px;margin-top:30px}
+.card{background:#fff;padding:30px 28px;box-shadow:0 0 0 1px var(--line);position:relative}
+.card::before{content:"\201C";position:absolute;top:-6px;left:18px;font-family:'Cormorant Garamond',serif;font-size:5rem;color:var(--rose);line-height:1}
+.card h3{font-size:1.45rem;color:var(--sage-d);margin-bottom:2px;position:relative}
+.card .who{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.card p{margin-bottom:12px;font-size:.97rem}
+.card p:last-child{margin-bottom:0}
+
+/* gallery */
+.gallery{background:var(--cream)}
+.grid{columns:2;column-gap:12px;margin-top:30px}
+@media(min-width:700px){.grid{columns:3}}
+.grid img{margin-bottom:12px;cursor:zoom-in;transition:.3s;break-inside:avoid}
+.grid img:hover{opacity:.85}
+.lb{position:fixed;inset:0;background:rgba(15,20,16,.94);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+.lb.on{display:flex}
+.lb img{max-height:88vh;max-width:100%}
+.lb button{position:absolute;top:14px;right:18px;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer}
+
+/* guestbook */
+.gb form{max-width:520px;margin:30px auto 0;display:grid;gap:12px}
+.gb input,.gb textarea{font:inherit;padding:14px 16px;border:1px solid var(--line);background:#fff;color:var(--ink);width:100%}
+.gb textarea{min-height:140px;resize:vertical}
+.gb .btn{justify-content:center;color:#fff}
+
+/* thanks */
+.thanks{background:var(--sage-d);color:#e3dfd2;text-align:center}
+.thanks h2{color:#fff}
+.thanks p{max-width:640px;margin:0 auto 18px}
+.thanks .final{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,6vw,2.8rem);color:var(--gold-l);margin-top:40px;line-height:1.2}
+footer{background:#18211a;color:#8e978c;text-align:center;font-size:.8rem;padding:28px 22px;letter-spacing:.05em}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav id="nav"><ul>
+  <li><a href="#invitation">Invitation</a></li>
+  <li><a href="#hommage">Hommage</a></li>
+  <li><a href="#portraits">Leurs vies</a></li>
+  <li><a href="#frise">Dates clés</a></li>
+  <li><a href="#histoire">Leur histoire</a></li>
+  <li><a href="#valeurs">Valeurs</a></li>
+  <li><a href="#anecdotes">Souvenirs</a></li>
+  <li><a href="#photos">Photos</a></li>
+  <li><a href="#message">Message</a></li>
+</ul></nav>
+
+<header class="hero">
+  <div class="eyebrow">Célébration commémorative du rappel à Dieu</div>
+  <div class="portraits">
+    <figure><img src="photos/jean-gabriel-portrait.jpg" alt="Portrait de Jean-Gabriel Makani"></figure>
+    <figure><img src="photos/brigitte-portrait.jpg" alt="Portrait de Brigitte Ngo Mboua"></figure>
+  </div>
+  <h1>Jean-Gabriel Makani<span class="amp">&amp;</span>Brigitte Ngo Mboua</h1>
+  <div class="years">
+    <div><b>1938 · 1992</b>35 ans déjà</div>
+    <div><b>1941 · 2017</b>10 ans déjà</div>
+  </div>
+  <p class="verse">Heureux dès à présent les morts qui meurent dans le Seigneur !<small>Apocalypse 14, 13</small></p>
+  <a class="scroll" href="#invitation">Découvrir</a>
+</header>
+
+<section class="invite center" id="invitation">
+  <div class="wrap">
+    <div class="eyebrow">Invitation</div>
+    <h2>La famille Makani vous convie</h2>
+    <p class="quote">« Ceux que nous avons aimés ne nous quittent jamais vraiment ; ils continuent de vivre dans nos cœurs, nos souvenirs et nos prières. »</p>
+    <p>Il est des êtres dont le passage sur terre laisse une empreinte indélébile, et dont le souvenir traverse les générations sans jamais s'effacer.</p>
+    <p>35 années après le rappel à Dieu de M. Jean-Gabriel Makani, survenu le 22 février 1992, et 10 années après celui de Mme Brigitte Ngo Mboua, survenu le 12 janvier 2017, la famille Makani souhaite honorer leur mémoire à travers une célébration commémorative placée sous le signe de l'amour, de la reconnaissance et du recueillement.</p>
+    <p>À cette occasion, la famille Makani a l'honneur de vous convier à ces moments de communion et de partage, afin qu'ensemble nous puissions raviver les souvenirs, célébrer les vies qui nous ont marqués et rendre un hommage digne à ces deux êtres chers.</p>
+    <p>Votre présence, vos prières et votre affection seront pour la famille un précieux témoignage de solidarité et de soutien.</p>
+    <p>Car si le temps emporte les années, il n'efface jamais les belles âmes ni les traces qu'elles laissent dans nos vies.</p>
+
+    <div class="dates">
+      <div class="date"><span>Vendredi</span><b>15</b><em>janvier 2027</em></div>
+      <div class="amp">&amp;</div>
+      <div class="date"><span>Samedi</span><b>16</b><em>janvier 2027</em></div>
+    </div>
+    <div class="place">Song Ndjiki (par Otélé)</div>
+    <div class="btns">
+      <a class="btn solid" href="https://www.google.com/maps/search/?api=1&query=Song+Ndjiki+Ot%C3%A9l%C3%A9+Cameroun" target="_blank" rel="noopener">Itinéraire</a>
+      <button class="btn" id="ics">Ajouter à mon agenda</button>
+    </div>
+
+    <div class="programme">
+      <h3>Programme</h3>
+      <p>Le programme détaillé des deux journées sera communiqué prochainement.</p>
+    </div>
+    <p style="margin-top:34px">La famille Makani vous attend nombreux pour célébrer ensemble leur mémoire.<br><em>Que leurs âmes reposent en paix.</em></p>
+  </div>
+</section>
+
+<section class="intro" id="hommage">
+  <div class="wrap">
+    <figure class="couple reveal"><img src="photos/couple-invitation.jpg" alt="Jean-Gabriel Makani et Brigitte Ngo Mboua"></figure>
+    <div class="reveal">
+      <p>Ce livre n'est pas l'histoire d'une fin, mais le récit d'une magnifique histoire. Nous sommes réunis non pas pour pleurer leur départ, mais pour célébrer la lumière qu'ils ont laissée dans nos vies.</p>
+      <p>Nos parents, Brigitte et Jean-Gabriel, ont marché main dans la main, guidés par un amour profond et une générosité sans faille. Ensemble, ils ont bâti des liens, partagé des éclats de rire et surmonté les tempêtes avec une grâce inspirante. Leur existence fut un hymne à la vie, à la famille et à l'amitié.</p>
+      <p>À travers ces pages, vous découvrirez quelques dates importantes de leur parcours. Des sacrifices inestimables consentis, des journées interminables de labeur et de persévérance endurées, les luttes contre les démons et les problèmes sociaux rencontrés, et enfin les valeurs transmises et léguées aux enfants.</p>
+      <p>Que ces pages soient un doux rappel que l'amour ne disparaît jamais. Il change simplement de forme. Merci d'avoir fait partie de leur voyage et de continuer à faire vivre leur mémoire par vos sourires et vos partages.</p>
+    </div>
+    <blockquote class="big reveal">« Il y a quelque chose de plus fort que la mort, c'est la présence des absents dans la mémoire des vivants. »<cite>Jean d'Ormesson, de l'Académie française</cite></blockquote>
+  </div>
+</section>
+
+<section class="bios" id="portraits">
+  <div class="wrap">
+    <div class="center"><div class="eyebrow">Leurs vies</div><h2>Et si Brigitte et Gabriel vous étaient contés…</h2></div>
+
+    <article class="bio reveal">
+      <figure><img src="photos/brigitte-jeune.jpg" alt="Brigitte Ngo Mboua"></figure>
+      <div>
+        <h3>Brigitte Ngo Mboua</h3>
+        <div class="nick">Née le 6 mars 1941 à Makak, Kaya</div>
+        <p>Cinquième d'une fratrie de dix enfants, elle est issue d'une famille chrétienne. Son père, Étienne Mboua, est catéchiste, et sa mère, Perpétue Ngo Ngan, est femme au foyer comme la plupart de ses congénères.</p>
+        <p>Brigitte est inscrite très tard à l'école catholique. Chez les Mboua, l'école est réservée prioritairement aux garçons. C'est ainsi qu'elle est appelée plusieurs fois à interrompre sa scolarité pour garder ses petits frère et sœur à leur naissance (Michel Um et Claire Ngo Mboua).</p>
+        <p>Notre grand-mère, Perpétue Ngo Ngan, n'avait pas une grande santé. Brigitte sera même obligée de rejoindre ses grandes sœurs Marie et Marguerite, nouvellement mariées, dans leurs foyers respectifs, toujours pour s'occuper des enfants.</p>
+        <p>Elle finira quand même son enseignement primaire, et entamera des cours de couture et d'aide-soignante à l'école ménagère de Makak.</p>
+      </div>
+    </article>
+
+    <article class="bio rev reveal">
+      <figure><img src="photos/jean-gabriel-jeune.jpg" alt="Jean-Gabriel Makani"></figure>
+      <div>
+        <h3>Jean-Gabriel Makani</h3>
+        <div class="nick">« Makouss », le Petit Blanc des rails, Nkana Minkon<br>Né le 11 février 1938 ici, à Song Ndjiki (par Otélé)</div>
+        <p>Fils de Jean Makani et de Fidèle Scholastique Ngo Tonye, il est le deuxième d'une fratrie de six enfants.</p>
+        <p>Il entre à l'école primaire Saint-Pie-X de Hikoa Maen, où il obtient le CEPE en 1953, à l'âge de 15 ans. Il est reçu la même année au concours d'entrée au petit séminaire d'Édéa.</p>
+        <p>Il est renvoyé du séminaire en 1957, en classe de 3e, en pleine année scolaire, alors qu'il prépare le BEPC. Il rejoint son grand frère Pierre Ndjiki à Douala, où il passe son examen avec succès. Il rentre ensuite à Song Ndjiki, où il est rapidement recruté, la même année, par les missionnaires de Hikoa Maen comme maître d'école primaire. Son père ne souhaitait pas qu'il rejoigne la contestation politique qui faisait rage à Douala.</p>
+        <p>Parallèlement à son travail d'instituteur, Jean-Gabriel poursuit ses études, par correspondance cette fois, comme cela se faisait à l'époque. Elles sont couronnées par l'obtention du probatoire en 1965, puis du baccalauréat l'année suivante, en 1966. Nommé directeur d'école, il exerce un peu partout dans le grand diocèse de Yaoundé jusqu'en 1968. Il est ensuite appelé par Monseigneur Jean Zoa à enseigner au collège François-Xavier Vogt. Monseigneur avait besoin d'enseignants qualifiés pour ses collèges d'enseignement secondaire, et il puisa d'abord dans ses effectifs.</p>
+        <p>En 1971, il s'inscrit à la faculté des lettres et sciences humaines de l'Université de Yaoundé et obtient une licence d'histoire-géographie. En 1974, il intègre l'École normale supérieure et en sort nanti d'un CAPES d'histoire-géographie. La même année, il commence sa carrière comme professeur des lycées, puis comme responsable d'établissement, d'abord à Sangmélima, puis au lycée Leclerc à Yaoundé, au lycée de New-Bell à Douala, etc.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="frise">
+  <div class="wrap">
+    <div class="center"><div class="eyebrow">Repères</div><h2>Les dates clés</h2></div>
+    <div class="tl">
+      <div class="ev reveal"><div class="y">1938<small>11 février</small></div><p>Naissance de Jean-Gabriel à Song Ndjiki.</p></div>
+      <div class="ev reveal"><div class="y">1941<small>6 mars</small></div><p>Naissance de Brigitte à Makak, Kaya.</p></div>
+      <div class="ev reveal"><div class="y">1953</div><p>Jean-Gabriel obtient le CEPE et entre au petit séminaire d'Édéa.</p></div>
+      <div class="ev reveal"><div class="y">1957</div><p>BEPC à Douala, puis premier poste de maître d'école à Hikoa Maen.</p></div>
+      <div class="ev key reveal"><div class="y">1960<small>27 février</small></div><p>Mariage de Brigitte et Jean-Gabriel à Hikoa Maen.</p></div>
+      <div class="ev reveal"><div class="y">1966</div><p>Baccalauréat obtenu par correspondance, après le probatoire en 1965.</p></div>
+      <div class="ev reveal"><div class="y">1968</div><p>Professeur au collège François-Xavier Vogt, à l'appel de Mgr Jean Zoa.</p></div>
+      <div class="ev reveal"><div class="y">1974</div><p>CAPES d'histoire-géographie à l'École normale supérieure.</p></div>
+      <div class="ev key reveal"><div class="y">1992<small>22 février</small></div><p>Rappel à Dieu de Jean-Gabriel.</p></div>
+      <div class="ev key reveal"><div class="y">2017<small>12 janvier</small></div><p>Rappel à Dieu de Brigitte.</p></div>
+      <div class="ev reveal"><div class="y">2027<small>15 et 16 janvier</small></div><p>La famille se réunit à Song Ndjiki pour honorer leur mémoire.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="histoire" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="center"><div class="eyebrow">Leur histoire</div><h2>Une vie à deux</h2></div>
+
+    <h3>Rencontre et mariage</h3>
+    <p>En 1959, Jean-Gabriel enseigne encore à l'école Saint-Pie-X de Hikoa Maen et montre de très bons talents de pédagogue, qui font tourner les têtes des jeunes apprenantes. Les prêtres exigent de son père qu'il lui trouve une épouse.</p>
+    <p>Son père en parle à sa petite sœur Élisabeth, qui lui propose une jeune fille qu'elle connaît et qu'elle trouve très belle, courageuse, travailleuse et discrète, du côté de Kaya, à Makak. Sa mère, Fidèle Ngo Tonye, se rend à Kaya à la rencontre de la jeune Brigitte. Elle en parle ensuite à son fils, qui à son tour se rend à Kaya pour faire sa connaissance. Le père de Brigitte étant catéchiste comme celui de Jean-Gabriel, l'union est très vite scellée. Les deux jeunes gens se marient devant Dieu et les hommes le 27 février 1960 à Hikoa Maen.</p>
+    <figure class="photo-wide reveal"><img src="photos/mariage.jpg" alt="Jean-Gabriel et Brigitte le jour de leur mariage"><figcaption>Le jour du mariage, 27 février 1960</figcaption></figure>
+
+    <h3>Vie familiale et professionnelle</h3>
+    <p>Une fois mariés, Brigitte et Gabriel décident de quitter la masure dans laquelle vivait toute la famille. Ils construisent leur première case en bordure de la route, à l'entrée de Song Ndjiki, d'autant que l'administration coloniale demande à tous les habitants de quitter la brousse et de rejoindre les regroupements.</p>
+    <p>Très vite, les enfants arrivent. De leur union naîtra une nombreuse progéniture, onze enfants, tous vivants. Papa est ambitieux et travaille à sortir sa famille de l'illettrisme et de la misère. Par sa persévérance, il passera de maître d'école primaire à agrégé et assimilé, catégorie A2 de la fonction publique, hors échelle. Il encadre également ses frères et sœurs, dont certains suivront la voie de l'enseignement.</p>
+    <p>Il aura été l'un des premiers bacheliers d'Otélé, et celui qui a ouvert la route de l'université dans la famille Log Yu. Professeur d'histoire-géographie, surveillant général au lycée Leclerc à Yaoundé, censeur, inspecteur national de pédagogie, Papa aura eu une longue carrière dans la formation des jeunes. Avec près de trente ans de service dans l'enseignement, du primaire au secondaire, il laisse des milliers d'anciens élèves partout dans le pays. Marafa Hamidou Yaya ou le ministre Etoundi Ngoa, par exemple, sont passés entre ses mains.</p>
+    <figure class="photo-wide reveal"><img src="photos/trio.jpg" alt="Photo d'époque"></figure>
+    <p>Pendant ce temps, Maman n'est pas en reste. Elle se forme aux soins infirmiers et à la couture, et se lance dans les petits commerces (beignets-haricots-bouillie, bouillon de viande, vin de palme « à trois palmiers »). Elle ouvre même un « circuit » où elle fait à manger. Tout cela pour aider son époux à prendre soin de leurs enfants, mais aussi des autres membres de la famille dont ils ont la charge.</p>
+    <p>Tout n'a pas toujours été rose, et le couple a connu ses hauts et ses bas. Maman a connu le chagrin, mais gardait tout pour elle. Jamais elle ne nous a laissé voir que la polygamie que lui avait imposée son mari pouvait nuire à notre bien-être. Au contraire, elle nous demandait d'être respectueux envers ses coépouses et de nous concentrer sur nos études.</p>
+    <p>Les années passent, les enfants grandissent et font à leur tour des enfants. Fille de catéchiste, Maman s'investit dans les études bibliques, avec l'aide de son mari qui l'accompagne chaque samedi pour préparer les résumés des lectures dominicales et les intentions de prière. Elle ira même rencontrer Mgr Jean Zoa pour demander l'intégration des communautés bassa et bamiléké au sein de la paroisse de Nsam.</p>
+    <p>Engagée, Brigitte Makani a une vie associative bien remplie. Elle est lectrice, dame apostolique, catéchiste, membre de l'Association des âmes du purgatoire, de l'Association des veuves, de l'Ambass, des femmes du Ndog Ngond, etc.</p>
+    <p>Après le décès de Papa des suites d'une courte maladie en 1992, elle déploie toutes ses forces de mère pour nous encadrer, en demandant l'aide du Seigneur afin d'achever l'œuvre laissée par son mari.</p>
+  </div>
+</section>
+
+<section class="values" id="valeurs">
+  <div class="wrap">
+    <div class="center"><div class="eyebrow" style="color:var(--gold-l)">Ce qu'ils nous ont laissé</div><h2>Leurs valeurs</h2></div>
+    <div class="vgrid">
+      <div class="vcard reveal">
+        <h3>Brigitte</h3>
+        <p class="lead">Une vie de simplicité et de foi</p>
+        <p style="font-size:.95rem;margin-bottom:10px">Brigitte était une femme douce, profondément pieuse et d'une générosité rare. Elle a marqué tous ceux qui l'ont croisée par sa simplicité, son sourire constant et son amour inconditionnel pour sa famille.</p>
+        <ul>
+          <li><b>Un cœur pur.</b> Brigitte ne cherchait jamais les honneurs. Son bonheur se trouvait dans les choses simples du quotidien.</li>
+          <li><b>La foi pour boussole.</b> Chaque matin, elle confiait sa journée à Dieu. La prière était son refuge et sa force dans les épreuves.</li>
+          <li><b>Une générosité vraie.</b> Sa porte était toujours ouverte. Elle partageait le peu qu'elle avait, avec une main tendue et un mot réconfortant.</li>
+          <li><b>Le pilier de la famille.</b> Elle savait rassembler les siens avec patience et tendresse.</li>
+          <li><b>Un modèle d'amour.</b> Ses conseils, portés par la sagesse et la bienveillance, restent gravés en nous.</li>
+          <li><b>Une lumière éternelle.</b> Même si elle est partie, son souvenir veille sur nous comme une douce présence.</li>
+        </ul>
+      </div>
+      <div class="vcard reveal">
+        <h3>Jean-Gabriel</h3>
+        <p class="lead">« Le Petit Blanc des rails »</p>
+        <p style="font-size:.95rem;margin-bottom:10px">Surnommé affectueusement « le Petit Blanc des rails », Makouss a marqué tous ceux qui l'ont croisé par sa simplicité et sa force de caractère. Homme de foi et de savoir, il a traversé les épreuves de la vie avec un courage inébranlable, trouvant toujours la lumière au bout du chemin.</p>
+        <ul>
+          <li><b>Une simplicité désarmante.</b> Il aimait les choses vraies, les rires partagés et le calme des moments simples, loin du superflu.</li>
+          <li><b>Une générosité sans limites.</b> Toujours prêt à tendre la main, il donnait sans compter, avec une bienveillance rare.</li>
+          <li><b>Une résilience à toute épreuve.</b> Face aux tempêtes de l'existence, il ne s'est jamais écroulé. Il a tenu bon, le dos droit, pour porter les siens.</li>
+          <li><b>Un amour familial inouï.</b> Sa famille était son port d'attache, son chef-d'œuvre et sa plus grande fierté.</li>
+          <li><b>Un héritage éternel.</b> Le Petit Blanc des rails s'en est allé, mais l'empreinte de Makouss reste gravée dans les cœurs. Il laisse le doux souvenir d'un père protecteur, d'un roc discret et d'un homme au grand cœur dont la lumière ne s'éteindra jamais.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="anecdotes">
+  <div class="wrap">
+    <div class="center"><div class="eyebrow">Souvenirs</div><h2>Anecdotes</h2></div>
+    <div class="anec">
+      <div class="card reveal">
+        <h3>Léopoldine Deschambres</h3><div class="who">Sa fille</div>
+        <p>J'étais en classe de première au lycée de New-Bell. Mon père était mon censeur, mais aussi mon professeur d'histoire-géographie. Lors d'une interrogation, il nous donna ce sujet : « La France et l'Angleterre à Fachoda ». J'avais cru bien rédiger ma dissertation. « Malet » Makani, comme on l'appelait ici, a ramassé les copies et a commencé par corriger la mienne. Il m'a donné 3/10, soit 6/20… Par malheur, ma mère a vu la note et lui a demandé pourquoi il me notait si durement.</p>
+        <p>Papa a répliqué qu'il me notait selon mon mérite et non selon ses sentiments, et il a ajouté : « A ngond Étienne, il faut apprendre aux enfants à se débrouiller et à se battre dans la vie. Il faut bien former les enfants, car qui sait, nous ne serons pas éternellement avec eux. »</p>
+      </div>
+      <div class="card reveal">
+        <h3>Pascaline Omgba</h3><div class="who">Sa fille</div>
+        <p>J'étais en classe de 3e au CES d'Ekounou. Papa était de passage au collège pour une visite d'inspection, en tant qu'inspecteur national d'histoire-géographie du Centre. J'ai couru naïvement vers lui, contente de le voir mais aussi pour en mettre plein la vue à mes camarades. J'ai été stoppée net : « Mademoiselle Makani, il n'y a pas de papa ici, je suis là pour le travail. »</p>
+      </div>
+      <div class="card reveal">
+        <h3>Marie Édith Ngo Makani</h3><div class="who">Sa fille</div>
+        <p>Mama, ma petite Maman. Je me souviendrai toujours de tes retours de la messe de 6 h, de ton ouïe d'agente de la CIA qui démasquait mes petits vols dans la marmite, et de ta fameuse question-piège : « C'est bon dans ta bouche ? » Derrière ta rigueur se cachaient un amour profond et des valeurs précieuses. Aujourd'hui, je comprends que « qui aime bien châtie bien ».</p>
+        <p>Merci pour la femme que je suis devenue. Tu es mon étoile du matin. Je t'aime d'un amour éternel. À jamais, Maman.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Brigitte Ngo Mboua</h3><div class="who">Sa petite-fille</div>
+        <p>Mes grands-parents ont été pour moi bien plus que des grands-parents. Ils ont été des parents, des refuges et des bénédictions. Mon grand-père, qui m'appelait affectueusement « sa femme », a laissé en moi l'empreinte d'un amour qui a comblé l'absence paternelle dont j'ai souffert. Ma grand-mère, dont je porte fièrement le nom, était ma maman, ma confidente, celle qui ne cessait de me dire « Bombo, pourquoi tu ne m'as pas appelée aujourd'hui ? »</p>
+        <p>Je garde précieusement ses conseils, ses bénédictions et nos repas partagés dans la même assiette, accompagnés de son doux « Bombo, viens, on mange ». Aujourd'hui, dans mes moments difficiles, leur absence me pèse et mes larmes deviennent mes seules paroles. De là où vous êtes, continuez de m'accompagner, de me protéger et de bénir votre petite-fille. Je porte votre amour en moi pour toujours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="photos">
+  <div class="wrap">
+    <div class="center"><div class="eyebrow">Album</div><h2>En images</h2></div>
+    <div class="grid" id="grid">
+      <img src="photos/couple.jpg" alt="Jean-Gabriel et Brigitte">
+      <img src="photos/famille-3.jpg" alt="La famille réunie">
+      <img src="photos/brigitte-eglise-1.jpg" alt="Brigitte à l'église">
+      <img src="photos/famille-1.jpg" alt="Photo de famille">
+      <img src="photos/jean-gabriel-salon.jpg" alt="Jean-Gabriel">
+      <img src="photos/brigitte-balcon.jpg" alt="Brigitte">
+      <img src="photos/famille-2.jpg" alt="Photo de famille">
+      <img src="photos/brigitte-eglise-2.jpg" alt="Brigitte avec les dames apostoliques">
+    </div>
+  </div>
+</section>
+
+<section class="gb" id="message">
+  <div class="wrap center">
+    <div class="eyebrow">Livre d'or</div>
+    <h2>Laissez un message</h2>
+    <p style="max-width:560px;margin:0 auto">Un souvenir, une prière, un mot pour la famille. Votre message sera envoyé à la famille Makani par WhatsApp.</p>
+    <form id="gbform">
+      <input id="gbname" placeholder="Votre nom" required>
+      <textarea id="gbmsg" placeholder="Votre message" required></textarea>
+      <button class="btn solid" type="submit">Envoyer mon message</button>
+    </form>
+  </div>
+</section>
+
+<section class="thanks" id="remerciements">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--gold-l)">Remerciements</div>
+    <h2>Merci</h2>
+    <p>En votre présence, nous voulons simplement leur dire merci et leur confirmer que nous essayons de pratiquer leurs enseignements, leur éducation, leur amour du prochain, leur bienveillance, leur empathie, leur sens élevé du partage et du respect de l'humain.</p>
+    <p>Maman, les valeurs que tu nous as inculquées ne nous quitteront jamais. Nous pensons à toi à travers des gestes simples du quotidien, des rituels réguliers et des actions concrètes qui font vivre ta mémoire. Maman, tu as toujours pensé que cette vie terrestre ne mettrait pas un point final à ton existence. Si ton souhait a été exaucé, si tu peux nous voir ou nous entendre, nous savons que tu seras à la fois heureuse et confuse que tes enfants parlent de toi ainsi.</p>
+    <p>Papa, tu as instruit, construit, aimé et partagé. Nous ne cesserons jamais de te remercier pour tout ce que tu nous as transmis. Ta sagesse nous guide encore, tes conseils résonnent toujours à nos oreilles. Parti sans prévenir, tu nous as laissés dans l'incompréhension, mais ton souvenir reste intact.</p>
+    <p>Tu as été notre pilier. Merci pour chaque leçon, chaque blague, tous les sourires et tous les sacrifices. Tu resteras à jamais notre héros discret. À toi qui nous as tout donné, nous promettons de transmettre tes valeurs à nos enfants. Papa, héros, ta mémoire guide et guidera nos pas chaque jour. Ton départ a laissé un vide immense dans notre famille, mais tu avais déjà rempli nos vies de tant de richesses.</p>
+    <p><em>Nous ne vous oublierons jamais.</em></p>
+    <p style="margin-top:30px;font-size:.92rem;color:#b9b4a5">La famille remercie chaleureusement toutes les personnes qui, par leur présence, leurs messages ou leurs pensées, s'associent à cette célébration.</p>
+    <div class="final">Reposez en paix,<br>M. et Mme Makani</div>
+  </div>
+</section>
+
+<footer>Famille Makani · Song Ndjiki, janvier 2027</footer>
+
+<div class="lb" id="lb"><button aria-label="Fermer">&times;</button><img alt=""></div>
+
+<script>
+/* Numéro WhatsApp de la famille, au format international sans + ni espaces (ex. 237690000000) */
+const WHATSAPP = "237XXXXXXXXX";
+
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('show',scrollY>innerHeight*.7),{passive:true});
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+const lb=document.getElementById('lb'),lbi=lb.querySelector('img');
+document.querySelectorAll('#grid img,.photo-wide img,.bio img').forEach(i=>{i.style.cursor='zoom-in';i.onclick=()=>{lbi.src=i.src;lbi.alt=i.alt;lb.classList.add('on')}});
+lb.onclick=()=>lb.classList.remove('on');
+addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+
+document.getElementById('ics').onclick=()=>{
+  const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Famille Makani//FR","BEGIN:VEVENT","UID:makani-2027@famille","DTSTAMP:20261121T000000Z","DTSTART;VALUE=DATE:20270115","DTEND;VALUE=DATE:20270117","SUMMARY:Célébration commémorative Makani","LOCATION:Song Ndjiki (par Otélé)\\, Cameroun","DESCRIPTION:En mémoire de Jean-Gabriel Makani et Brigitte Ngo Mboua.","END:VEVENT","END:VCALENDAR"].join("\r\n");
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));a.download='commemoration-makani.ics';a.click();
+};
+
+document.getElementById('gbform').onsubmit=e=>{
+  e.preventDefault();
+  const t=`Message pour la famille Makani\n\n${document.getElementById('gbmsg').value}\n\n${document.getElementById('gbname').value}`;
+  window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t)}`,'_blank');
+};
+</script>
+</body>
+</html>
